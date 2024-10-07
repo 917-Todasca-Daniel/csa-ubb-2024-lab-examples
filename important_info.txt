@@ -1,0 +1,8 @@
+GRADE computed:
+- 15% lab homework
+    - 2 points for every week delay
+- 15% mid-term practical test on 7th December 2024 (Saturday)
+    - you pass with any grade
+- 15% practical examination (last laboratory, 6-18 January)
+    - you need at least 5
+- 55% writen exam
