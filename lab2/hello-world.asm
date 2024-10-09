@@ -12,8 +12,8 @@ import exit msvcrt.dll
 segment data use32 class=data
     var_hello db 'Hello World!'
     
-    x dw 1
-    y dw 3
+    x db 1
+    y db 3
     
 ; our code starts here
 segment code use32 class=code
@@ -23,14 +23,14 @@ segment code use32 class=code
         mov ECX, 0
         
         ; AL = x
-        mov AX, [x]
+        mov AL, [x]
         ; AL = x+y
-        add AX, [y]
+        add AL, [y]
 
         ; CL = AL = x+y
-        mov CX, AX
+        mov CL, AL
         ; AX = CL*AL = (x+y)*(x+y)
-        mul CX
+        mul CL
         
         ; questions:
             ; can we simplify this code?
