@@ -1,5 +1,6 @@
 # Useful links
 - [Official course website](https://www.cs.ubbcluj.ro/~vancea/asc/en-index.php)
+- [Grades & attendance](https://ubbcluj.sharepoint.com/:x:/s/2023-2024ComputerSystemsArchitecture-IEcopy-EchipaASC/ETCfYXPETntGvNjYHSC9l0oB6itbaoW2xQAj7-iekcGiMg?e=lJ3hU2)
 
 ## Course Grade 
 The final grade for this course is computed based on:
