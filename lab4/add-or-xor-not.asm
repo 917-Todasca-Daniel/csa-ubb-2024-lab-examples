@@ -9,11 +9,11 @@ segment data use32 class=data
 segment code use32 class=code
     start:
     
-        ; AND operator
+        ; AND instruction
         mov EAX, 00FFh
         mov EBX, 5h
         and EAX, EBX
-        ; AND instruction
+        ; AND operator
         mov EAX, 00FFh & 5h
         
         ; >> sample task: using AND, compute a number from EAX using only the 3rd and 4th bit

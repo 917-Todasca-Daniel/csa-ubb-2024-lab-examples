@@ -16,7 +16,7 @@ segment code use32 class=code
         
         ; ror - rotate right
         mov AL, 11110000b
-        rol AL, 2
+        ror AL, 2
 
         ; rcl - rotate with carry left (it's a rotate operation with a delay)
         stc 

@@ -32,7 +32,7 @@ segment code use32 class=code
         mov AL, 0F0h
         sar AL, 2
         mov AL, 00Ch
-        sal AL, 2
+        sar AL, 2
     
         ; exit(0)
         push    dword 0      ; push the parameter for exit onto the stack
