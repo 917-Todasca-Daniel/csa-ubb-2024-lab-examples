@@ -20,7 +20,7 @@ segment code use32 class=code
         ;    min = v2
         ; else
         ;    max = v2
-        ;    min = v2
+        ;    min = v1
 
         ; SIGNED - numbers can be negative
         
@@ -38,8 +38,6 @@ segment code use32 class=code
             mov byte [max], BL      ; max = v2
             mov byte [min], AL      ; min = v1
         signed_if_end:
-       
-
         ; UNSIGNED - only positive numbers
         
         mov byte [max], 0
@@ -54,7 +52,7 @@ segment code use32 class=code
         v1_unsigned_greater:
             mov byte [max], AL      ; max = v1
             mov byte [min], BL      ; min = v2
-            jmp signed_if_end
+            jmp unsigned_if_end
         v2_unsigned_greater:
             mov byte [max], BL      ; max = v2
             mov byte [min], AL      ; min = v1

@@ -38,7 +38,7 @@ segment code use32 class=code
             mov byte [res1 + ESI], AL   ; DO_STUFF
 
             inc ESI
-        loop loop_start
+        loop loop_start    ; dec ECX; cmp ECX, 0; jne 0;
         loop_end:
 
         ; re-written without LOOP

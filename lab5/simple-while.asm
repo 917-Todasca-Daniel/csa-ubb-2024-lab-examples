@@ -31,7 +31,6 @@ segment code use32 class=code
         mov ESI, 0
         find_first_new_line:
             mov AL, [poem + ESI]
-
             cmp AL, '\\'             ; if !CONDITION then jump to stop_loop_label
             je stop_loop             ; if !CONDITION then jump to stop_loop_label
 
