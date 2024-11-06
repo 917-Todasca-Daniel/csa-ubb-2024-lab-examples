@@ -12,7 +12,6 @@ segment data use32 class=data
 
 segment code use32 class=code
     start:
-
         mov esi, input
         mov edi, positive_only
         mov ecx, len / 2
@@ -20,7 +19,7 @@ segment code use32 class=code
         jecxz loop_end
         
         loop_start:
-            lodsw           ; AX = input[ESI++]
+            lodsw           ; AX = [ESI], ESI += 2
             cmp AX, 0        
             jg add_to_array ; AX > 0 ? then jump to add_to_array
             jmp add_to_array_end ; else skip the next lines

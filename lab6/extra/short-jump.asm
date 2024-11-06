@@ -17,7 +17,7 @@ segment code use32 class=code
             mov AL, 10
             mul AL
 
-            a resb 200
+            a1 resb 200
 
         loop loop_fail_start
         loop_fail_end:
@@ -29,7 +29,7 @@ segment code use32 class=code
             mov AL, 10
             mul AL
 
-            a resb 200
+            a2 resb 200
             
         dec ecx
         jecxz loop_success_end
