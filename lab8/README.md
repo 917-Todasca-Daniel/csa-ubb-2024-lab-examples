@@ -1,7 +1,7 @@
 # Links
 - [Lab 8 theory](https://www.cs.ubbcluj.ro/~vancea/asc/en-lab8-teorie.php)
 - [Lab 8 exercises](https://www.cs.ubbcluj.ro/~vancea/asc/en-lab8-exercitii.php)
-- [Homework 8 assignments]()
+- [Homework 8 assignments](https://docs.google.com/spreadsheets/d/1LDqrA6my5lUzgoEdFXm7IjOnOkG9reXwY37emflSaJU/edit?usp=sharing)
 
 
 ## C documentation
