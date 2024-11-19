@@ -19,7 +19,7 @@ segment data use32 class=data
 
 segment code use32 class=code
     start:
-        ; fopen("files/raven.txt", "r")
+        ; FILE* file = fopen("files/raven.txt", "r")
         push read_access_mode
         push file_path
         call [fopen]  ; EAX contains the file handler
@@ -36,7 +36,7 @@ segment code use32 class=code
             push dword 100
             push dword 1
             push buffer
-            call [fread]
+            call [fread] ; EAX = how many characters were read
             add ESP, 4 * 4
             mov [count_read], AL ; save this to a variable
 
