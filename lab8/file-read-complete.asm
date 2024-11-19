@@ -19,7 +19,7 @@ segment data use32 class=data
 
 segment code use32 class=code
     start:
-        ; FILE* file = fopen("files/raven.txt", "r")
+        ; fopen("files/raven.txt", "r")
         push read_access_mode
         push file_path
         call [fopen]  ; EAX contains the file handler
