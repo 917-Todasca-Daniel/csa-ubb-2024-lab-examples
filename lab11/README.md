@@ -1,6 +1,7 @@
 # Links
 - [Lab 11 theory](https://www.cs.ubbcluj.ro/~vancea/asc/en-lab11-teorie.php)
 - [Lab 11 exercises](https://www.cs.ubbcluj.ro/~vancea/asc/en-lab11-exercitii.php)
+- [Lab 11+12 homework](https://docs.google.com/spreadsheets/d/1lJjrBtxA8gJ3xqEYycmYH1hT-lp5giulONPYLN0Nrq0/edit?usp=sharing)
 
 ## Running the examples
 #### a+b
