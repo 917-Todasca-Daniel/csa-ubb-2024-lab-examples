@@ -1,4 +1,7 @@
-bits 32                         
+bits 32             
+
+extern is_leap_year        
+
 segment code use32 public code
     global is_valid_date
 
@@ -50,9 +53,19 @@ segment code use32 public code
             jg .invalid_date
             jmp .valid_date
         .check_feb:
-            ; TODO: complete the code - check for leap years and adjust for 29 days
             cmp EAX, 0
             jle .invalid_date
+
+            mov EDX, [ESP+4]   ; EDX = year
+            push EDX
+            call is_leap_year
+            cmp EAX, 0
+            je .not_leap_year
+            cmp EAX, 29
+            jg .invalid_date
+            jmp .valid_date
+
+            .not_leap_year:
             cmp EAX, 28
             jg .invalid_date
             jmp .valid_date
