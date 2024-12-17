@@ -8,9 +8,9 @@ segment code use32 public code
     ; is_valid_date(day, month, year)
     ; return 1 for TRUE and 0 for FALSE
     is_valid_date:
-        mov EAX, [ESP+12]  ; EAX = day
+        mov EAX, [ESP+4]  ; EAX = day
         mov ECX, [ESP+8]   ; ECX = month
-        mov EDX, [ESP+4]   ; EDX = year
+        mov EDX, [ESP+12]   ; EDX = year
 
         cmp EDX, 0
         jle .invalid_date
@@ -56,7 +56,7 @@ segment code use32 public code
             cmp EAX, 0
             jle .invalid_date
 
-            mov EDX, [ESP+4]   ; EDX = year
+            mov EDX, [ESP+12]   ; EDX = year
             push EDX
             call is_leap_year
             cmp EAX, 0

@@ -8,19 +8,26 @@
 ```
 cd a+b
 nasm -f win32 sum.asm
-g++ -m32 -Wall -no-pie gcd.obj main.cpp -o main.exe
+g++ -m32 -Wall -no-pie sum.obj main.cpp -o main.exe
 .\main.exe
 ```
 Or short version:
 ```
 cd a+b
-nasm -f win32 sum.asm ; g++ -m32 -Wall -no-pie gcd.obj main.cpp -o main.exe ; .\main.exe
+nasm -f win32 sum.asm ; g++ -m32 -Wall -no-pie sum.obj main.cpp -o main.exe ; .\main.exe
 ```
 #### gcd
 ```
 cd gcd
 nasm -f win32 gcd.asm
 g++ -m32 -Wall -no-pie gcd.obj main.cpp -o main.exe
+.\main.exe
+```
+#### class task
+```
+cd class-task
+nasm -f win32 is_palindrome_date.asm
+g++ -m32 -Wall -no-pie is_palindrome_date.obj main.cpp -o main.exe
 .\main.exe
 ```
 ### Add g++ to PATH

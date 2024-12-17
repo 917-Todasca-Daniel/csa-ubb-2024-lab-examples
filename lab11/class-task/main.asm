@@ -1,6 +1,7 @@
 bits 32
 global start        
 extern exit, printf, is_palindrome_date
+extern is_valid_date
 import exit msvcrt.dll  
 import printf msvcrt.dll 
 
@@ -19,6 +20,20 @@ segment code use32 class=code
     ; int is_leap_year(int day, int month, int year)
     ; return 1 if it is a valid date
     ; and 0 otherwise
+
+    mov EAX, 0
+    mov AL, [day]
+    mov EBX, 0
+    mov BL, [month]
+    mov ECX, 0
+    mov CX, [year]
+
+    push ECX 
+    push EBX
+    push EAX
+    call is_valid_date
+    cmp EAX, 0
+    je .skip_program
 
     mov EAX, 0
     mov AL, [day]
@@ -49,6 +64,8 @@ segment code use32 class=code
     push print_str
     call [printf]
     add ESP, 4
+
+    .skip_program:
 
     ; exit(0)
     push    dword 0      ; push the parameter for exit onto the stack
